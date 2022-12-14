@@ -1,27 +1,30 @@
-<!DOCTYPE html><html><head>
-    <meta charset="utf-8">
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
-    
-    
-    
-    <link rel="manifest" href="./manifest.json">
-
-    <script>
-        // register ServiceWorker
-        window.onload = () => {
-            'use strict';
-
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker
-                        .register('./service_worker.js');
-            }
-        }
-    </script>
-
-    <title>Yew App</title>
   
-<link rel="preload" href="./yew-pwa-minimal-2-dd5be26da7f3f20b_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="./yew-pwa-minimal-2-dd5be26da7f3f20b.js"></head>
-<body><script type="module">import init from './yew-pwa-minimal-2-dd5be26da7f3f20b.js';init('./yew-pwa-minimal-2-dd5be26da7f3f20b_bg.wasm');</script></body></html>
+  
+  
+
+  <link rel="manifest" href="./manifest.webmanifest">
+  <script>
+      // register ServiceWorker
+      window.onload = () => {
+          'use strict';
+
+          if ('serviceWorker' in navigator) {
+              navigator.serviceWorker
+                      .register('./service_worker.js');
+          }
+      }
+  </script>
+
+  <title>Futino</title>
+
+<link rel="preload" href="./futino_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="./futino.js"></head>
+<body>
+  
+
+<script type="module">import init from './futino.js';init('./futino_bg.wasm');</script></body></html>
