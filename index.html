@@ -1,26 +1,36 @@
 <!DOCTYPE html><html lang="en"><head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  
-  
-  
+    <!-- Files -->
+    
+    
+    
 
-  <link rel="manifest" href="./manifest.webmanifest">
-  <script>
-      // register ServiceWorker
-      window.onload = () => {
-          'use strict';
+    <!-- Directories -->
+    
 
-          if ('serviceWorker' in navigator) {
-              navigator.serviceWorker
-                      .register('./service_worker.js');
-          }
-      }
-  </script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./output.css">
 
-  <title>Futino</title>
+    <!-- PWA -->
+    <link rel="manifest" href="./manifest.webmanifest">
+    <script>
+        // register ServiceWorker
+        window.onload = () => {
+            'use strict';
+
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker
+                        .register('./service_worker.js');
+            }
+        }
+    </script>
+
+    <!-- Properties -->
+    <title>Futino</title>
 
 <link rel="preload" href="./futino_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
 <link rel="modulepreload" href="./futino.js"></head>

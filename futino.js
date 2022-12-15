@@ -581,11 +581,11 @@ function getImports() {
     imports.wbg.__wbindgen_throw = function(arg0, arg1) {
         throw new Error(getStringFromWasm0(arg0, arg1));
     };
-    imports.wbg.__wbindgen_closure_wrapper3523 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper3525 = function(arg0, arg1, arg2) {
         const ret = makeMutClosure(arg0, arg1, 219, __wbg_adapter_16);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper3571 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper3573 = function(arg0, arg1, arg2) {
         const ret = makeMutClosure(arg0, arg1, 235, __wbg_adapter_19);
         return addHeapObject(ret);
     };

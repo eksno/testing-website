@@ -3,22 +3,22 @@
     "name": "Futino",
     "icons": [
         {
-            "src": "./images/192.png",
+            "src": "./images/logo/square/192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "./images/192.png",
+            "src": "./images/logo/square/256.png",
             "sizes": "256x256",
             "type": "image/png"
         },
         {
-            "src": "./images/192.png",
+            "src": "./images/logo/square/384.png",
             "sizes": "384x384",
             "type": "image/png"
         },
         {
-            "src": "./images/192.png",
+            "src": "./images/logo/square/512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
@@ -27,5 +27,5 @@
     "start_url": "./index.html",
     "background_color": "white",
     "theme_color": "white",
-    "display": "standalone"
+    "display": "fullscreen"
 }
