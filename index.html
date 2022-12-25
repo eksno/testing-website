@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" class="dark [--scroll-mt:9.875rem] lg:[--scroll-mt:6.3125rem] js-focus-visible hjlgpiqq idc0_343"><head>
+<!DOCTYPE html><html lang="en"><head>
     <!-- Meta Data -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,12 +29,24 @@
         }
     </script>
 
+    <script>
+        // color theme
+        if (
+            localStorage.getItem('color-theme') === 'dark' ||
+        (!('color-theme' in localStorage) &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches)
+        ) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+
     <!-- Properties -->
     <title>Futino</title>
 
 <link rel="preload" href="./futino_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
 <link rel="modulepreload" href="./futino.js"></head>
-<body class="antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900">
-  
+<body>
 
 <script type="module">import init from './futino.js';init('./futino_bg.wasm');</script></body></html>
